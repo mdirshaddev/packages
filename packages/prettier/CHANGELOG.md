@@ -1,5 +1,11 @@
 # @mdirshaddev/prettier-config
 
+## 0.0.3
+
+### Patch Changes
+
+- e1b36ce: fix(docs): 📝docs update with correct package name
+
 ## 0.0.2
 
 ### Patch Changes
