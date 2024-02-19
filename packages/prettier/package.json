@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@mdirshaddev/prettier",
+  "name": "@mdirshaddev/prettier-config",
   "version": "0.0.1",
   "private": false,
   "main": "src/index.ts",
