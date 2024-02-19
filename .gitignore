@@ -1,0 +1,8 @@
+# dependecy
+node_modules
+.pnpm-store
+.pnpm
+
+# nx
+.nx/cache
+nx-cloud.env
