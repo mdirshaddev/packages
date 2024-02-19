@@ -3,7 +3,7 @@ name: Development and testing of packages
 on:
   push:
     branches:
-      - development
+      - features/*
 
 jobs:
   test-all-packages:
