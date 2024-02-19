@@ -1,5 +1,11 @@
 # @mdirshaddev/prettier-config
 
+## 0.0.4
+
+### Patch Changes
+
+- 5a1f669: source code push to npm fixes
+
 ## 0.0.3
 
 ### Patch Changes

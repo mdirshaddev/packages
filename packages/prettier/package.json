@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "@mdirshaddev/prettier-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "main": "src/index.ts",
   "type": "module",
