@@ -1,5 +1,12 @@
 # @mdirshaddev/prettier-config
 
+## 0.0.5
+
+### Patch Changes
+
+- 93b11bb: fix for npm publishing
+- 5e7ba98: npm publishing of package via changeset and github action automation
+
 ## 0.0.4
 
 ### Patch Changes
