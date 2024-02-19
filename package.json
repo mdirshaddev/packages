@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@mdirshaddev/packages",
+  "private": true,
+  "homepage": "https://github.com/mdirshaddev/packages",
+  "description": "📦 This package is a go to standard packages for prettier, eslint and typescript.",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "npm shrinkwrap",
+    "preuninstall": "npx only-allow pnpm",
+    "postuninstall": "npm shrinkwrap",
+    "deduplicate": "pnpm dedupe",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "lockfile-audit": "npx lockfile-lint --path npm-shrinkwrap.json --type npm --allowed-hosts npm yarn --validate-https"
+  },
+  "keywords": [
+    "pnpm-workspace",
+    "typescript",
+    "prettier",
+    "eslint",
+    "shared-config"
+  ],
+  "author": {
+    "name": "Md Irshad",
+    "email": "mdirshaddev@gmail.com",
+    "url": "https://mdirshad.vercel.app"
+  },
+  "bugs": {
+    "url": "https://github.com/mdirshaddev/packages/issues",
+    "email": "mdirshaddev+github@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdirshaddev/packages.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "nx": "^18.0.4",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.10",
+    "pnpm": ">=8.9"
+  },
+  "packageManager": "pnpm@8.9.0"
+}
