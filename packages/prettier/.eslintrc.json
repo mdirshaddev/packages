@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc",
+  "overrides": [
+    {
+      "files": ["__tests__/**/*.test.ts"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}

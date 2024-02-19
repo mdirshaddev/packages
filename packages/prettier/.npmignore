@@ -1,0 +1,10 @@
+node_modules
+__tests__
+.npmignore
+.prettierignore
+.eslintignore
+.prettierrc.json
+.eslintrc.json
+jest.config.ts
+tsconfig.json
+tsconfig.build.json

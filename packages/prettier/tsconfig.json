@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["@types/node", "@types/jest"],
+    "baseUrl": ".",
+    "paths": {
+      "@prettier/*": ["src/*"]
+    }
+  }
+}
