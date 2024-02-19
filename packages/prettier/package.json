@@ -50,5 +50,12 @@
     "tag": "latest",
     "access": "public"
   },
-  "sideEffect": false
+  "sideEffect": false,
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "package.json",
+    "LICENSE.txt"
+  ]
 }
