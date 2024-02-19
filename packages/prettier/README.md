@@ -1,4 +1,4 @@
-# @mdirshaddev/prettier
+# @mdirshaddev/prettier-config
 
 Prettier package with import sorting plugin named `@ianvs/prettier-plugin-sort-imports`
 
@@ -29,19 +29,19 @@ module.exports = sharedPrettierConfig;
 - npm
 
 ```
-npm install @mdirshaddev/prettier
+npm install @mdirshaddev/prettier-config
 ```
 
 - yarn
 
 ```
-yarn add @mdirshaddev/prettier
+yarn add @mdirshaddev/prettier-config
 ```
 
 - pnpm
 
 ```
-pnpm add @mdirshaddev/prettier
+pnpm add @mdirshaddev/prettier-config
 ```
 
 # How to setup
@@ -51,7 +51,7 @@ Crete a .prettierrc.js or .prettierrc.cjs when using type module then add the ex
 ```ts
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 const prettierConfig = {
-  ...require('@mdirshaddev/prettier'),
+  ...require('@mdirshaddev/prettier-config'),
   importOrderParserPlugins: ['typescript', 'decorators'],
   importOrder: [
     '<TYPES>',
@@ -73,7 +73,7 @@ module.exports = prettierConfig;
 ```tsx
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 const prettierConfig = {
-  ...require('@mdirshaddev/prettier'),
+  ...require('@mdirshaddev/prettier-config'),
   importOrderParserPlugins: ['typescript', 'jsx', 'decorators'],
   importOrder: [
     '<TYPES>',

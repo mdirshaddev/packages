@@ -1,4 +1,4 @@
-# @mdirshaddev/prettier
+# @mdirshaddev/prettier-config
 
 ## 0.0.2
 
