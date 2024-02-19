@@ -3,5 +3,5 @@
   "compilerOptions": {
     "rootDir": "./"
   },
-  "exclude": ["node_modules", "**/*.ts", "__tests__"]
+  "exclude": ["node_modules", "./*.ts", "__tests__"]
 }
