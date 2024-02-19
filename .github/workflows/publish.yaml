@@ -58,8 +58,8 @@ jobs:
           commit: 'Release ${{env.PACKAGE_NAME}}@${{env.VERSION}}'
           createGithubReleases: true
           setupGitUser: true
-          version: pnpm version
-          publish: pnpm release
+          version: pnpm changeset-version
+          publish: pnpm changeset-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
