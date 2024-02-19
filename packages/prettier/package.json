@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@mdirshaddev/prettier",
+  "version": "0.0.0",
+  "private": false,
+  "type": "module",
+  "homepage": "https://github.com/mdirshaddev/packages",
+  "description": "📦 This package is a go to standard packages for prettier.",
+  "scripts": {
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write ."
+  },
+  "keywords": [
+    "prettier",
+    "typescript",
+    "shared-config"
+  ],
+  "author": {
+    "name": "Md Irshad",
+    "email": "mdirshaddev@gmail.com",
+    "url": "https://mdirshad.vercel.app"
+  },
+  "bugs": {
+    "url": "https://github.com/mdirshaddev/packages/issues",
+    "email": "mdirshaddev+github@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdirshaddev/packages.git",
+    "directory": "packages/prettier"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.10",
+    "pnpm": ">=8.9"
+  },
+  "packageManager": "pnpm@8.9.0"
+}
