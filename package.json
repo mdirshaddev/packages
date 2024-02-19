@@ -12,7 +12,9 @@
     "deduplicate": "pnpm dedupe",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "lockfile-audit": "npx lockfile-lint --path npm-shrinkwrap.json --type npm --allowed-hosts npm yarn --validate-https"
+    "lockfile-audit": "npx lockfile-lint --path npm-shrinkwrap.json --type npm --allowed-hosts npm yarn --validate-https",
+    "changeset-release": "pnpm recursive exec -- pnpm build && npx changeset publish",
+    "changeset-version": "npx changeset version"
   },
   "keywords": [
     "pnpm-workspace",

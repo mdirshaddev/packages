@@ -45,17 +45,21 @@ jobs:
       - name: Run tests for each package
         run: pnpm recursive exec -- pnpm test
 
+      - name: Prep commit message
+        run: |
+          echo "PACKAGE_NAME=$(pnpm changeset status --output=release.json && jq -r '.releases[0].name' release.json && rm release.json)" >> "$GITHUB_ENV"
+          echo "VERSION=$(pnpm changeset status --output=release.json && jq -r '.releases[0].newVersion' release.json && rm release.json)" >> "$GITHUB_ENV"
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
+        with:
+          title: 'Release ${{env.PACKAGE_NAME}}@${{env.VERSION}}'
+          commit: 'Release ${{env.PACKAGE_NAME}}@${{env.VERSION}}'
+          createGithubReleases: true
+          setupGitUser: true
+          version: pnpm version
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Publish
-        if: steps.changesets.outputs.hasChangesets == 'false'
-        # You can do something when a publish should happen.
-        run: |
-          pnpm recursive exec -- pnpm build
-          npx changeset publish
-        env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
