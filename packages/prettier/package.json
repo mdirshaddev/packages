@@ -44,7 +44,7 @@
     "node": ">=18.10",
     "pnpm": ">=8.9"
   },
-  "packageManager": "pnpm@8.9.0",
+  "packageManager": "pnpm@8.15.5",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "tag": "latest",
